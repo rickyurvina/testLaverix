@@ -43,6 +43,12 @@
             <x-jet-input id="date_of_birth" type="date" class="mt-1 block w-full"   wire:model.defer="state.date_of_birth" />
             <x-jet-input-error for="date_of_birth" class="mt-2" />
         </div>
+
+        <div class="col-span-6 sm:col-span-4">
+            <div class="font-medium text-base text-gray-800"> Último Inicio de Sesión: {{ Auth::user()->last_login }}</div>
+
+
+        </div>
     </x-slot>
 
     <x-slot name="actions">

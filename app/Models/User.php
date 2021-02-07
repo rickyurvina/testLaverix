@@ -31,6 +31,7 @@ class User extends Authenticatable implements MustVerifyEmail
         'direction',
         'date_of_birth',
         'last_name',
+        'last_login',
     ];
 
     /**
@@ -43,6 +44,7 @@ class User extends Authenticatable implements MustVerifyEmail
         'remember_token',
         'two_factor_recovery_codes',
         'two_factor_secret',
+
     ];
 
     /**
@@ -53,6 +55,8 @@ class User extends Authenticatable implements MustVerifyEmail
     protected $casts = [
         'email_verified_at' => 'datetime',
         'date_of_birth' => 'date:Y-m-d',
+        'last_login' => 'date:Y-m-d',
+
 
     ];
 

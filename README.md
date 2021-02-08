@@ -13,6 +13,7 @@
 
 - git clone https://github.com/rickyurvina/testLaverix.git
 - Instalar composer> composer install
+Correr npm install && npm run dev
 - Correr el siguiente comando en la carpeta del proyecto: copy .env.example .env
 - Correr el siguiente comando en la carpeta del proyecto: php artisan key:generate
 - Configurar .env con una base de datos y credenciales de correo electronico
